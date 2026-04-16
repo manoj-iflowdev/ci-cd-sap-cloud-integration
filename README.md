@@ -1,0 +1,67 @@
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub](https://img.shields.io/badge/sap_integration-Custom-blue)
+
+# Simplifying CI/CD for SAP Cloud Integration Projects
+
+## Description
+Simplify SAP Cloud Integration CI/CD with a native approach - no external tools or Git required.
+
+## Overview
+CI/CD is a hot topic in the world of software development. It stands for Continuous Integration and Continuous Deployment (or Continuous Delivery), and it plays a pivotal role in modern software development processes. CI/CD is a set of practices, tools, and principles aimed at automating and streamlining the software development lifecycle.
+
+Most modern developer tools, such as VS Code, even SAP BAS, etc. now come equipped with native Git integration. However, SAP Cloud Integration differs significantly from other development tools, and as a result, implementing a CI/CD solution for it presents unique challenges.
+
+Getting started with this process can be relatively straightforward, but it does necessitate a certain level of familiarity with Git, pipelines, and some knowledge on any CI/CD tools such as Jenkins, GitHub Actions, Bitbucket, Azure Pipelines or GitLab, among others. Moreover, you will need to install additional tools or programs on your local computer to kickstart the CI/CD process. However, it is important to note that while constructing a CI/CD pipeline using CI/CD tools can be relatively straightforward, resolving issues or errors in the pipeline and maintaining it demands additional skills, time, and effort. SAP customers may need to train their workforce to effectively use CI/CD tools.
+
+As everybody is not familiar and comfortable with CI/CD tools, this project can be used as an alternative to implement the Continuous Integration (CI) and Continuous Delivery/Deployment (CD) capabilities for SAP Cloud Integration without using any external CI/CD tools. The goal of this project was to leverage the inherent capabilities of SAP Cloud Integration, alongside the power of Groovy and chaining of APIs, to create a solution that aligns more closely with the platform's core development style.
+
+Designed with ease-of-use in mind, making it simple and straightforward to begin without the need for any additional external tools or specialized knowledge. It is designed entirely around the core building blocks and artifacts of SAP Cloud Integration, without even relying on native Git, a prerequisite for most CI/CD and DevOps tools.
+
+A write-up about this project can be found here: [Demystifying CI/CD Pipelines for SAP Cloud Integration Projects](https://blogs.sap.com/2023/10/20/demystifying-ci-cd-pipelines-for-sap-cloud-integration-projects/).
+
+## Solution Diagrams
+![General architecture](docs/images/General%20architecture.png)
+
+## Requirements
+You will need a SAP Cloud Integration tenant to consume, test and enhance these integration artifacts.
+
+## Download and Installation
+This repository contains:
+1. [Integration Package](build/) - The zip file of the integration package that will help you to create your own Continuous Integration (CI) and Continuous Delivery (CD) pipelines for your SAP Cloud Integration Projects. This package is built in such a way, so that you only need to replace a few configuration parameters that are specific to your environment and organization/project and leave the rest as it is.
+> Further, you can use this package as a starting template to create your own CI/CD pipelines tailored to your organization/project needs and customize further.
+2. [Source Code](src/) - The unzip or raw file contents of each integration flows.
+3. [Test Integration Packages](test/#test-packages) - You can download the test packages from the repository, which you can readily use for testing. You can explore various combinations within each of the test packages and integration flows and try out the overall solution in your trial or non-production tenant. While you can also use your own test packages and integration flows, these are provided for quick reference to get you started.
+
+## Documentation
+To learn how to use the integration artifacts, please refer to the [user documentation](docs/README.md).
+
+Refer to the GitHub repository [sap-cloud-integration-artifacts](https://github.com/nesun3/sap-cloud-integration-artifacts.git) to understand the folder structure and how files will be stored in GitHub. This repository on GitHub provides examples of different use cases and supported scenarios.
+
+## Features
+> **No external tools or Git required | No additional investment | No external knowledge required except core SAP Cloud Integration**
+- Sync all or specific integration contents from the SAP Cloud Integration tenant to GitHub Repository to store and see the full history of changes.
+- Check the SAP Cloud Integration tenant for a new version of your integration contents (like packages and iflows) and if a new version exists, sync the changed integration contents to GitHub Repository and keep track of the latest changes.
+- Transport/Migrate all or specific integration contents from the Source SAP Cloud Integration tenant to the Target SAP Cloud Integration tenant without using any external tool.
+- Download the latest version of an integration flow artifact or resources of an integration flow artifact from your GitHub Repository and either update or create the artifacts on the SAP Cloud Integration tenant.
+
+## Support, Feedback, Contributing
+This project is open to feature requests/suggestions, bug reports, etc. via GitHub issues and pull requests. Contribution and feedback are encouraged and always welcome.
+
+Please refer to the [contributing guidelines](CONTRIBUTING.md) and [code of conduct](CONTRIBUTING.md) before contributing to this repository.
+
+## License
+See the [LICENSE](LICENSE) file for details.
+
+## Support the Project
+Encourage this repo by giving it a star. If you like this concept, click on "Star" on the top right of the screen. This is the GitHub equivalent of a "like" or "+1".
+
+## Maintainer
+This project is maintained by Manoj Gali, a Senior SAP CPI Consultant with over 5 years of professional experience in SAP integration technologies. Manoj specializes in SAP CPI, PI/PO, and hybrid integration landscapes, with deep technical expertise in Groovy Scripting, XSLT, and User-Defined Functions (UDFs). He focuses on designing, developing, and optimizing scalable integration solutions to ensure secure, high-performance data exchange across enterprise systems.
+
+For inquiries or professional collaboration, you can reach out via:
+- Email: manoj.gali695@gmail.com
+- GitHub: [Manoj Gali](https://github.com/manoj-gali)
+
+---
+Developed with care in India
